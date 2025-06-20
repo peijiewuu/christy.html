@@ -1,0 +1,200 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero-section img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-section .card {
+  background-color: #fffda9; /* 改為較亮黃色 */
+  border: none;
+  box-shadow: none;
+}
+
+.about-section .card h1,
+.about-section .card p {
+  color: #1565c0;
+}
+
+.about-section .card p {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section .btn {
+  background-color: #1565c0;
+  color: white;
+  padding: 0.6rem 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.memphis-section {
+  background-color: #1565c0;
+}
+
+.menu-section .menu-card {
+  transition: transform 0.3s ease;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.menu-section .menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.footer-section {
+  background-color: #1565c0;
+}
+
+.footer-section p,
+.footer-section h1 {
+  color: #fff;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-nav .nav-link {
+  color: #1565c0 !important;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(21, 101, 192, 0.8);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.carousel-inner {
+  animation: slideAnimation 6s infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.7;
+  }
+  66% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section .text-end {
+    text-align: left !important;
+  }
+  .memphis-section img {
+    margin-top: 2rem;
+  }
+}
+.about-card {
+  background-color: #fff150; /* 更接近截圖中的亮黃 */
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  color: #1565c0;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-btn {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.75rem 2.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.menu-section .row.g-4 {
+  justify-content: center; /* 讓整排卡片置中 */
+}
+
+.menu-wrapper {
+  position: relative;
+  width: 280px; /* 卡片寬 */
+  height: 395px; /* 卡片+藍底高度，確保藍底完整 */
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center; /* 垂直置中卡片在容器 */
+  justify-content: center; /* 水平置中 */
+}
+
+.menu-wrapper:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.menu-card {
+  background-color: #fff !important;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 380px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.menu-base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 292px; /* 比卡片寬度大4% */
+  height: 395px; /* 比卡片高4% */
+  background-color: #1565c0;
+  border-radius: 22px;
+  z-index: 1;
+}

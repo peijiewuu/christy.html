@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gin Gin Coffee Company</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/imageslogo.png" alt="Logo" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div
+        id="heroCarousel"
+        class="carousel slide d-none d-lg-block"
+        data-bs-ride="carousel"
+        data-bs-interval="2500"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Frame 7.png" class="d-block w-100" alt="Frame 7" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/1-3.webp" class="d-block w-100" alt="1-3" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/3-3-scaled.webp" class="d-block w-100" alt="3-3" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <img
+        src="img/490456536_1273523434780155_1549996338804404375_n.jpg"
+        class="w-100 d-lg-none"
+        alt="Mobile Hero Image"
+      />
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+      <div class="container">
+        <div class="about-card p-5 text-center" data-aos="fade-up">
+          <h1 class="about-title">
+            "A Wonderful Life Begins with a Cup of Coffee"
+          </h1>
+          <p class="about-description">
+            GinGin Coffee Company is a place where coffee and creativity come
+            together. Renowned for its rich brews and inviting vibe, it offers
+            expertly crafted drinks, delicious pastries, and a warm space to
+            unwind or connect. Whether you're catching up with friends or
+            seeking inspiration, GinGin is here to make every moment special.
+          </p>
+          <a href="#" class="btn about-btn">MORE &gt;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memphis Section -->
+    <section class="memphis-section py-5 text-white" data-aos="fade-right">
+      <div
+        class="container d-flex flex-column flex-lg-row align-items-center justify-content-between"
+      >
+        <div class="mb-4 mb-lg-0 me-lg-5">
+          <h1>Memphis design aesthetics.</h1>
+          <p>GinGin Coffee, a popular café near Zhongxiao Xinsheng MRT...</p>
+          <a href="#" class="btn btn-warning text-dark">VIEW MORE &rarr;</a>
+        </div>
+        <img
+          src="img/IMG_8591 1.png"
+          class="img-fluid rounded shadow"
+          alt="Memphis Design"
+        />
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section py-5" id="menu">
+      <div class="container text-center">
+        <h2 class="mb-4">MENU</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-wrapper">
+              <div class="card menu-card">
+                <img
+                  src="img/Mask group-3.png"
+                  class="card-img-top menu-img"
+                  alt="Borscht"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Borscht</h5>
+                  <p class="card-text">
+                    Packed with fresh vegetables and tender beef...
+                  </p>
+                </div>
+              </div>
+              <div class="menu-base"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-wrapper">
+              <div class="card menu-card">
+                <img
+                  src="img/Mask group-2.png"
+                  class="card-img-top menu-img"
+                  alt="Sirloin Steak"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sirloin Steak</h5>
+                  <p class="card-text">Tender steak on fresh greens...</p>
+                </div>
+              </div>
+              <div class="menu-base"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="menu-wrapper">
+              <div class="card menu-card">
+                <img
+                  src="img/Mask group.png"
+                  class="card-img-top menu-img"
+                  alt="Strawberry Shake"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry Shake</h5>
+                  <p class="card-text">
+                    Enjoy our creamy Strawberry Milkshake...
+                  </p>
+                </div>
+              </div>
+              <div class="menu-base"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="footer-section text-white py-5" id="contact">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <h1>CONTACT<br />US</h1>
+            <div class="d-flex gap-3 mt-4">
+              <img src="img/instagram.png" alt="Instagram" width="32" />
+              <img src="img/facebook.png" alt="Facebook" width="32" />
+              <img
+                src="img/截圖 2024-12-20 下午5.57.14 1.png"
+                alt="Icon"
+                width="32"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <div>
+              <p>
+                <strong>ADDRESS</strong> 1F, No. 9, Lane 27, Linyi Street,
+                Taipei City
+              </p>
+              <p><strong>TEL</strong> +886 972 927 726</p>
+              <p><strong>EMAIL</strong> gingincoffee.co@gmail.com</p>
+              <p>&copy; GinGin Coffee Company 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
